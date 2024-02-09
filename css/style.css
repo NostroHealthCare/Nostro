@@ -134,7 +134,7 @@ p{
 /* Footer */
 
 footer {
-    background-image: url(/images/ftimg.jpg);
+    background-image: url(../images/ftimg.jpg);
     height: 200px;
     width: 100%;
     display: flex;
