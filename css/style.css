@@ -2,77 +2,113 @@
     margin: 0;
     padding: 0;
     list-style-type: none;
-    text-decoration: none;
 }
 body{
     background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
 }
-nav{
-    display: flex;
-    justify-content:space-around;
-    align-items: center;
-}
-.logo{
-    height: 5rem;
-}
 
-li{
-    display: inline;
-    margin-left: 20px;
-}
 a{
-    color: black;
-    font-size: 1.3rem;
+    text-decoration: none;
+}
+nav{
+    a:hover{
+        color: black !important;
+    }
 }
 a:hover{
-    color: white;
+    box-shadow: 4px 1px 10px white;
+}
+header{
+    border-bottom: 2px solid black;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+nav .container-fluid .collapse ul {
+    float: right;
+}
+.navbar-brand img{
+    border-radius: 100%;
+    background-color: aqua;
+}
+
+nav .container-fluid .collapse ul a{
+    font-size: 1.2rem;
+    margin-left: 50px;
 }
 .back-parent{
-    width: 100%;
+    width: 95vw;
     display: flex;
     align-items: center;
     justify-content: center;
 }
+.fluid-img{
+    height: 35vw;
+}
+
+
+
 .text{
     position: absolute;
-    height: 100px;
-    font-size: 2.2rem;
+    height: 15vw;
     color: black;
-    /* margin-left: -200px; */
-    left: 250px;
+    left: 20vw;
 }
 .underline{
     border-bottom: 1px solid black;
-    margin-bottom: 15px;
+    /* margin-bottom: 15px; */
+    margin-bottom: 0.1vw;
+    font-size: 1.8vw;
 }
 .circle{
     background-color: black;
     color: white;
     border-radius: 50%;
-    height: 75px;
-    width: 75px;
-    font-size: 1.2rem;
+    height: 7vw;
+    width: 7vw;
+    font-size: 1.7vw;
+}
+.circle:window-inactive{
+    animation: rainbow 1s linear 0s infinite ;
+}
+@keyframes rainbow {
+    from{
+        background-color: black;
+    }
+    to{
+        background-color: blue;
+    }
 }
 .p{
     position: absolute;
     display: flex;
-    top:28px;
-    padding-left: 8px;
+    top:2.1vw;
+    padding-left: 0.8vw;
+    
+}
+i{
+    font-size: 1.6vw;
+    font-weight: 400;
+    font-family:'Times New Roman', Times, serif;
 }
 .o{
     color: orangered;
 }
 
-/* Main */
+
 main{
     margin-top: 20px;
-    height: 900px;
-    width: 100%;
+    p{
+        font-size: 1.2rem;
+    }
 }
 .heading{
     text-align: center;
     border-bottom: 1px solid red;
 }
+
+
+
 .card-3{
     margin-top: 10px;
     height: 300px;
@@ -92,10 +128,11 @@ main{
         border: 1px solid red;
     }
 }
+
+
 .b{
     font-weight: 600;
     font-size: 1.5rem;
-    text-align: center;
 }
 .card-2-1,.card-2-2{
     img{
@@ -104,21 +141,10 @@ main{
         border: 1px solid red;
     }
 }
-.card-3-2-1,.card-3-2-2,.card-3-2-3{
-    height: 100px;
-}
-p{
-    font-size: 1.2rem;
-}
-.parent{
-    height: 150px;
-    display: flex;
-    justify-content: space-around;
-}
+
+/*  */
 .about-us{
     margin-top: 20px;
-    height: 150px;
-    width: 100%;
     text-align: center;
     font-size: 1rem;
     p{
@@ -127,34 +153,29 @@ p{
     }
 }
 .contactus{
-    height: 200px;
     text-align: center;
 }
 
 /* Footer */
 
 footer {
-    background-image: url(../images/ftimg.jpg);
-    height: 200px;
-    width: 100%;
+    background-image: url(/images/ftimg.jpg);
     display: flex;
     justify-content: space-around;
 
     .child {
-        width: 20vw;
-        height: 35vh;
         border-bottom: 1px double bisque;
 
         h3 {
             font-weight: 900;
-            font-size: 1.5rem;
-            padding: 10px;
+            font-size: 1.3rem;
+            padding: 2vw;
         }
 
         ol li {
-            padding-top: 5px;
-            padding-left: 10px;
-            border-left: 2px solid rgb(51, 19, 19);
+            padding-top: 0.5vw;
+            padding-left: 1vw;
+            border-left: 0.3vw solid rgb(51, 19, 19);
             a{
                 color: white;
             }
@@ -162,9 +183,9 @@ footer {
             a:hover {
                 position: static;
                 color: white;
-                left: 10px;
-                padding-left: 10px;
-                border-left: 1px solid red;
+                left: 1vw;
+                padding-left: 1vw;
+                border-left: 0.4vw solid red;
             }
         }
     }
@@ -179,8 +200,11 @@ footer {
     }
     :hover {
         h3 {
-            color: red;
+            color: yellowgreen;
         }
     }
     
 }
+
+
+/*  */
