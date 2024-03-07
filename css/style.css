@@ -159,7 +159,7 @@ main{
 /* Footer */
 
 footer {
-    background-image: url(../images/ftimg.jpg);
+    background-image: url("../images/ftimg.jpg");
     display: flex;
     justify-content: space-around;
 
