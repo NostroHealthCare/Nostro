@@ -1,210 +1,199 @@
-*{
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-}
-body{
-    background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
-}
+<!doctype html>
+<html lang="en">
 
-a{
-    text-decoration: none;
-}
-nav{
-    a:hover{
-        color: black !important;
-    }
-}
-a:hover{
-    box-shadow: 4px 1px 10px white;
-}
-header{
-    border-bottom: 2px solid black;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-}
-
-nav .container-fluid .collapse ul {
-    float: right;
-}
-.navbar-brand img{
-    border-radius: 100%;
-    background-color: aqua;
-}
-
-nav .container-fluid .collapse ul a{
-    font-size: 1.2rem;
-    margin-left: 50px;
-}
-.back-parent{
-    width: 95vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.fluid-img{
-    height: 35vw;
-}
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>NOSTRO | HOME</title>
+    <link rel="shortcut icon" href="favicon/favicon-32x32.png" type="image/x-icon">
 
 
+</head>
 
-.text{
-    position: absolute;
-    height: 15vw;
-    color: black;
-    left: 20vw;
-}
-.underline{
-    border-bottom: 1px solid black;
-    /* margin-bottom: 15px; */
-    margin-bottom: 0.1vw;
-    font-size: 1.8vw;
-}
-.circle{
-    background-color: black;
-    color: white;
-    border-radius: 50%;
-    height: 7vw;
-    width: 7vw;
-    font-size: 1.7vw;
-}
-.circle:window-inactive{
-    animation: rainbow 1s linear 0s infinite ;
-}
-@keyframes rainbow {
-    from{
-        background-color: black;
-    }
-    to{
-        background-color: blue;
-    }
-}
-.p{
-    position: absolute;
-    display: flex;
-    top:2.1vw;
-    padding-left: 0.8vw;
-    
-}
-i{
-    font-size: 1.6vw;
-    font-weight: 400;
-    font-family:'Times New Roman', Times, serif;
-}
-.o{
-    color: orangered;
-}
+<body>
 
 
-main{
-    margin-top: 20px;
-    p{
-        font-size: 1.2rem;
-    }
-}
-.heading{
-    text-align: center;
-    border-bottom: 1px solid red;
-}
+    <header>
+        <!--  -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-info">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="./images/logo.jpeg" alt="" width="80" height="80"
+                        class="d-inline-block align-text-top ms-4 mt-0">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <a class="nav-link active" href="#">Home</a>
+                        <a class="nav-link" href="#AboutUS">About Us</a>
+                        <a class="nav-link" href="#Products">Products</a>
+                        <a class="nav-link" href="#contactus">Contact Us</a>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!--  -->
+
+    </header>
+    <hr class="m-1">
 
 
+    <div class="back-parent">
+        <div class="text">
+            <div class="logo">
+                <div class="circle">
+                    <div class="p">
+                        <div class="o">N</div>os <div class="o">T</div>ro
+                    </div>
+                </div>
+            </div>
+            <h4 class="underline">Nostro Health Care</h4>
+            <p> <i> Sence the faith </i></p>
+        </div>
+        <div class="back">
+            <img src="/images/m1.jpg" class="fluid-img" alt="...">
+            <!-- <img src="images/m1.jpg" alt="trust image" width="1200px"> -->
+        </div>
+    </div>
+    <hr>
 
-.card-3{
-    margin-top: 10px;
-    height: 300px;
-    display: flex;
-    justify-content: space-around;
-}
-.card-2{
-    margin-top: 10px;
-    height: 300px;
-    display: flex;
-    justify-content: space-around;
-}
-.card-3-1,.card-3-2,.card-3-3{
-    img{
-        height: 250px;
-        width: 250px;
-        border: 1px solid red;
-    }
-}
+    <main id="Products">
+        <div class="heading">
+            <h4>Products</h4>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="card-3-1" id="Gestour-200">
+                        <img src="images/products/Gestour-200.jpg" alt="Gestour-200">
+                        <strong class="b">
+                            <p>Gestour-200</p>
+                        </strong>
+                        <p>
+                        <p>GESTOUR SR 200MG Tablet is a female sex hormone, progesterone. It is used to treat menstrual
+                            and
+                            pregnancy-related issues that are caused due to hormonal imbalance.</p>
+                        </p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card-3-2" id="Gestour-400">
+                        <img src="images/products/Gestour-400.jpg" alt="Gestour-400">
+                        <strong>
+                            <p class="b">Gestour-400</p>
+                        </strong>
+                        <p>GESTOUR 400MG Capsule is a female sex hormone, progesterone. It is used to treat menstrual
+                            and
+                            pregnancy-related issues that are caused due to hormonal imbalance.</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card-3-3" id="Custode-F">
+                        <img src="images/products/Custode-F.jpg" alt="Custode F">
+                        <strong>
+                            <p class="b">Custode-F</p>
+                        </strong>
+                        <p>CUSTODE - F tablet is a nutritional supplement for women. It is an ideal supplement for women
+                            suffering from Poly-Cystic Ovarian Syndrome(PCOS).
+                            It helps regulate the menstrual cycle.
+                            It reduces the risk of infertility.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+              <div class="col">
+                <div class="card-2-1">
+                    <img src="images/products/Folour-L.jpg" alt="Folour L" id="Folour-L">
+                    <strong>
+                        <p class="b">Folour-L</p>
+                    </strong>
+                    <p>
+                        FOLOUR - L Tablet helps supplement Folate deficiency while also providing other essential nutrients
+                        to keep the body healthy and reduce the risk of major illnesses. It can help manage problems related
+                        to low folate levels, such as neuropathic pain, anaemia, fits and seizures, and severe health
+                        complications.
+                    </p>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card-2-2" id="Folour-D">
+                    <img src="images/products/Folour-D.jpg" alt="Folour D">
+                    <strong>
+                        <p class="b">Folour-D</p>
+                    </strong>
+                    <p>
+                        FOLOUR -D Capsule acts by producing blood cells and platelets. It acts on the megaloblastic bone
+                        marrow to produce a normoblastic marrow and also treating vitamin B12 deficiency. It helps in
+                        inhibiting the herpes simplex virus growth.
+                    </p>
+                </div>
+              </div>
+            </div>
+          </div>
+    </main>
 
+    <!--  -->
+    <hr style="height: 5px;">
+    <div class="about-us">
+        <h3 id="AboutUS">About US</h3>
+        <p>We are a Maharashtra Based Private ltd. Company Registered at dated 22-NOV-2023 on Ministry of Corporate
+            Affairs(MCA), The Corporate Identification Number (CIN) of <b> NOSTRO HEALTHCARE PRIVATE LIMITED </b> is
+            U21000PN2023PTC225817 and registration number is U21000PN2023PTC225817.</p>
+    </div>
+    <hr>
+    <div class="contactus" id="contactus">
+        <h3>Contact US</h3>
+        <address>
+            Gmail ID: <a href="mailto:nostro.healthcare1@gmail.com">nostro.healthcare1@gmail.com</a> <br>
+            SHOP NO 22 OM RESIDENCY <br> NR JSPM COLLEGE, S NO 13 PUNE <br> MH 411041 IN <br> MAHARASHTRA MAHARASHTRA
+            INDIA 411041.
+        </address>
+        <hr>
+    </div>
+    <hr>
+    <footer>
+        <div class="child about" id="child1">
+            <h3>About Us</h3>
+            <ol>
+                <li><a href="#AboutUS">About US</a></li>
+                <li><a href="https://www.companydetails.in/company/nostro-healthcare-private-limited" >More Info</a></li>
+            </ol>
+        </div>
+        <div class="child" id="child3">
+            <h3>All Your Questions</h3>
+            <ol>
+                <li><a href="#contactus">Contact US</a></li>
+            </ol>
+        </div>
+        <div class="child data" id="child4">
+            <h3>Product</h3>
+            <ol>
+                <li><a href="#Gestour-200">Gestour-200</a></li>
+                <li><a href="#Gestour-400">Gestour-400</a></li>
+                <li><a href="#Custode-F">Custode-F</a></li>
+                <li><a href="#Folour-L">Folour-L</a></li>
+                <li><a href="#Folour-D">Folour-D</a></li>
+            </ol>
+        </div>
+    </footer>
+    <!--  -->
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
 
-.b{
-    font-weight: 600;
-    font-size: 1.5rem;
-}
-.card-2-1,.card-2-2{
-    img{
-        height: 250px;
-        width: 250px;
-        border: 1px solid red;
-    }
-}
-
-/*  */
-.about-us{
-    margin-top: 20px;
-    text-align: center;
-    font-size: 1rem;
-    p{
-        margin-top: 2rem;
-        font-size: 1.2rem;
-    }
-}
-.contactus{
-    text-align: center;
-}
-
-/* Footer */
-
-footer {
-    background-image: url(/images/ftimg.jpg);
-    display: flex;
-    justify-content: space-around;
-
-    .child {
-        border-bottom: 1px double bisque;
-
-        h3 {
-            font-weight: 900;
-            font-size: 1.3rem;
-            padding: 2vw;
-        }
-
-        ol li {
-            padding-top: 0.5vw;
-            padding-left: 1vw;
-            border-left: 0.3vw solid rgb(51, 19, 19);
-            a{
-                color: white;
-            }
-
-            a:hover {
-                position: static;
-                color: white;
-                left: 1vw;
-                padding-left: 1vw;
-                border-left: 0.4vw solid red;
-            }
-        }
-    }
-    .data,.about{
-        ol{
-            display: flex;
-            flex-direction: column;
-        }
-    }
-    h3{
-        color: white;
-    }
-    :hover {
-        h3 {
-            color: yellowgreen;
-        }
-    }
-    
-}
-
-
-/*  */
+</html>
